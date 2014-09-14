@@ -5,8 +5,8 @@ MAINTAINER Ahmed Soliman <me@ahmedsoliman.com>
 RUN wget "http://downloads.typesafe.com/typesafe-activator/1.2.10/typesafe-activator-1.2.10.zip" && \
     unzip typesafe-activator-*.zip
 
-ENV PATH /data/typesafe-activator-1.2.10:$PATH
+ENV PATH /data/activator-1.2.10:$PATH
 
-ADD ./cmd.sh /data/
+WORKDIR /data
 
 CMD ["./cmd.sh"]
