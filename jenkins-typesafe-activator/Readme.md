@@ -4,6 +4,8 @@ This is a jenkins slave that automatically installs your self-signed certificate
 
 typesafe activator is installed and available on path (sbt) you can use it instead of sbt if you like, this contains the full activator 1.2.10 bundle
 
+This also installs "sbt" and it is available in path for users
+
 ## Running
 
 ```
