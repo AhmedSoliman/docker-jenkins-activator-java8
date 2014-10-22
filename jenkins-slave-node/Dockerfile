@@ -17,6 +17,7 @@ RUN \
     apt-get install -y nodejs npm && \
     npm install -g mocha
 
+RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN rm -rf /var/lib/apt/lists/*
 
