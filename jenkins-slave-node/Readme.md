@@ -1,4 +1,4 @@
-# Jenkins Slave with Oracle Java 8 and NodeJs with Mocha
+# Jenkins Slave with Java 8 and NodeJs with Mocha
 
 This is a jenkins slave that automatically installs your self-signed certificate (ssl) and runs jenkins Swarm client to connect to your jenkins build server, you con configure the labels, mode, executors, name, and username/password for Swarm
 
