@@ -35,7 +35,7 @@ fi
 
 if [ ! -z "$SSL_HOST" ]; then
   echo 1 | java InstallCert "$SSL_HOST"
-  cp jssecacerts /usr/lib/jvm/java-8-oracle/jre/lib/security/
+  cp jssecacerts /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/
   mv jssecacerts ~/.keystore
 fi
 
