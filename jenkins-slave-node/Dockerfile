@@ -2,6 +2,8 @@ FROM java:8
 
 MAINTAINER Ahmed Soliman <me@ahmedsoliman.com>
 
+WORKDIR /data
+
 RUN wget "http://maven.jenkins-ci.org/content/repositories/releases/org/jenkins-ci/plugins/swarm-client/1.22/swarm-client-1.22-jar-with-dependencies.jar"
 
 RUN \
@@ -20,8 +22,6 @@ RUN wget -qO- https://get.docker.com/ | sh
 RUN apt-get clean 
 
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-WORKDIR /data
 
 ADD ./cmd.sh /data/
 
