@@ -13,6 +13,8 @@ RUN \
     wget "http://opentox.ntua.gr/files/InstallCert.zip" && \
     unzip InstallCert.zip
 
+RUN wget -qO- https://get.docker.com/ | sh
+
 RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /data
